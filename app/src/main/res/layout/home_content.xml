@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:layout_width="74dp"
+        android:layout_height="74dp"
+        android:layout_marginTop="45dp"
+        app:srcCompat="@drawable/read"
+        android:layout_gravity="center"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="casual"
+        android:text="Let's Learn"
+        android:layout_marginStart="100dp"
+        android:textColor="@color/Black"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/HomeTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_marginStart="150dp"
+        android:textSize="35sp"
+        android:textColor="@color/Orange_600"
+        android:textStyle="bold"
+        android:fontFamily="@font/cantora_one"
+        android:layout_marginTop="-20dp"
+        android:layout_marginBottom="5dp"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/Gray">
+
+        <ImageSwitcher
+            android:id="@+id/ImageSwitcher"
+            android:layout_width="match_parent"
+            android:inAnimation="@anim/slide_in_left"
+            android:outAnimation="@anim/slide_out_right"
+            android:layout_height="280dp"
+            android:padding="5dp"
+            android:layout_gravity="center"/>
+    </FrameLayout>
+    <Button
+        android:id="@+id/HomeBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:textSize="25sp"/>
+    <!--
+   <ImageButton
+       android:id="@+id/HomeBtn"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:backgroundTint="@color/Orange_600"
+       android:src="@drawable/ic_baseline_play_circle_outline_24"
+       />
+-->
+
+</LinearLayout>
+

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/ResultPg"
+        android:icon="@drawable/result"
+        android:title="Profile" />
+
+    <item android:id="@+id/HomePg"
+        android:icon="@drawable/home"
+        android:title="Home" />
+
+    <item android:id="@+id/QuizePg"
+        android:icon="@drawable/question_mark"
+        android:title="Quize"
+        />
+
+</menu>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/LightYellow"
+    tools:context=".ResultActivity">
+
+    <!--Title-->
+    <LinearLayout
+        android:id="@+id/rTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
+        android:layout_alignParentTop="true">
+        <ImageView
+            android:layout_width="84dp"
+            android:layout_height="84dp"
+            android:contentDescription="Result Title"
+            app:srcCompat="@drawable/result_pg"
+            android:layout_marginEnd="10dp"/>
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="casual"
+                android:text="Let's See"
+                android:textColor="@color/Black"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="34sp"
+                android:layout_marginStart="15dp"
+                android:text="Your Result"
+                android:layout_marginTop="30dp"
+                android:textColor="@color/Orange_600"
+                android:textStyle="bold"
+                android:fontFamily="@font/cantora_one" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+    <!--Result Image+Text-->
+    <LinearLayout
+        android:id="@+id/imgLayout"
+        android:layout_marginTop="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:orientation="vertical"
+        android:background="@drawable/border_img"
+        android:gravity="center"
+        android:layout_below="@id/rTitle">
+        <ImageView
+            android:id="@+id/ResultImg"
+            android:layout_width="100dp"
+            android:layout_height="250dp"
+            app:srcCompat="@drawable/wait"
+            android:layout_marginBottom="5dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/ResultText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgLayout"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:hint="You can do it, \nwe are waiting for you ..."
+        android:inputType="textMultiLine"
+        android:textAlignment="center"
+        android:textColorHint="@color/LightGray"
+        android:textSize="32sp" />
+    <!--Bottom Navigation Bar-->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/BottmBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:menu="@menu/bottom_nav_menu"
+        app:itemIconSize="40dp"
+        app:itemIconTint="@color/DarkOrange"
+        app:labelVisibilityMode="unlabeled"
+        android:layout_alignParentBottom="true"/>
+
+
+</RelativeLayout>
